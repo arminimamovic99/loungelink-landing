@@ -5,7 +5,8 @@ import {
   ArrowRight, 
   Zap, 
   BarChart3, 
-  Target
+  Target,
+  Check
 } from 'lucide-react';
 
 gsap.registerPlugin(ScrollTrigger);
@@ -14,6 +15,10 @@ gsap.registerPlugin(ScrollTrigger);
 
 const Navbar = ({ preset }) => {
   const [isScrolled, setIsScrolled] = useState(false);
+
+  const navigateToMeetingLink = () => {
+    window.open('https://wa.me/38762449878?text=Zanima%20me%20LoungeLink!%20', '_blank')
+  }
 
   useEffect(() => {
     const handleScroll = () => setIsScrolled(window.scrollY > 50);
@@ -27,7 +32,7 @@ const Navbar = ({ preset }) => {
       ? 'bg-white/70 backdrop-blur-xl border-navy/10 shadow-lg' 
       : 'bg-transparent border-transparent'
     } flex justify-between items-center`}>
-      <span className="font-sans font-extrabold text-2xl tracking-tighter text-[#050A1F]">
+      <span className="font-sans font-extrabold text-2xl tracking-tighter text-[#050A1F]" >
         Lounge<span className="text-[#c4391d]">Link</span>
       </span>
       <div className="hidden md:flex gap-8 text-[11px] font-bold uppercase tracking-widest text-[#050A1F]">
@@ -35,8 +40,8 @@ const Navbar = ({ preset }) => {
         <a href="#protocol" className="hover:text-[#c4391d] transition-colors">Protokol</a>
         <a href="#manifesto" className="hover:text-[#c4391d] transition-colors">Ideja</a>
       </div>
-      <button className="bg-[#c4391d] text-white px-5 py-2 rounded-full text-[11px] font-bold uppercase hover:scale-[1.03] transition-transform active:scale-95 shadow-[#c4391d]-200 shadow-lg">
-        Isprobajte LoungeLink
+      <button className="bg-[#c4391d] text-white px-5 py-2 rounded-full text-[11px] font-bold uppercase hover:scale-[1.03] transition-transform active:scale-95 shadow-[#c4391d]-200 shadow-lg" onClick={navigateToMeetingLink}>
+        Želim LoungeLink
       </button>
     </nav>
   );
@@ -44,6 +49,10 @@ const Navbar = ({ preset }) => {
 
 const Hero = () => {
   const heroRef = useRef(null);
+
+  const navigateToMeetingLink = () => {
+    window.open('https://wa.me/38762449878?text=Zanima%20me%20LoungeLink!%20', '_blank')
+  }
 
   useEffect(() => {
     const ctx = gsap.context(() => {
@@ -101,18 +110,20 @@ const Hero = () => {
       </div>
       
       <div className="relative z-20 hero-content max-w-6xl sm:px-0 md:px-16 flex flex-col w-full justify-center items-center md:items-start">
-        <h1 className="font-sans font-extrabold text-5xl md:text-8xl tracking-tighter text-[#050A1F] uppercase leading-[0.9]">
-          Ubrzajte svoje <br />
-          <span className="font-serif text-[#c4391d] capitalize text-5xl md:text-[11rem] lowercase italic">Poslovanje.</span>
+        <h1 className="font-sans font-extrabold text-4xl md:text-7xl tracking-tighter text-[#050A1F] uppercase leading-[0.9]">
+          Savršen softver za vaš
+          <span className="font-serif text-[#c4391d] text-4xl md:text-[10rem] lowercase italic"> nargila bar.</span>
         </h1>
         <p className="mt-16 max-w-xl text-lg text-[#050A1F]/60 font-medium">
-          Pametni sistem narudžbi za moderne ugostiteljske objekte. <br />
-          <hr className='my-3 opacity-30' />
-         <span className='font-bold text-black'>Lounge<span className="text-[#c4391d]">Link</span></span> vam automatizacijom omogućava trenutni prijenos narudžbi od gosta, preko konobara, do šanka i pripreme. <br />
-          Efikasnija <span className='font-bold'>usluga</span>. Profesionalniji <span className='font-bold'>rad</span>.
+        <span className='font-bold text-black'>Lounge<span className="text-[#c4391d]">Link</span></span> je pametni sistem za upravljanje modernim nargila barovima. <br />
         </p>
-        <button className="mt-10 group flex items-center gap-4 bg-[#050A1F] text-white px-8 py-4 rounded-full font-bold tracking-widest overflow-hidden relative transition-transform hover:scale-[1.02]">
-          <span className="relative z-10">Isprobajte Lounge<span className='text-[#c4391d]'>Link</span></span>
+        <hr className='my-3 opacity-30' />
+        <div className="flex gap-2 items-center text-[#050A1F]/60 "> <Check/> Eliminišite greške u komunikaciji osoblja</div>
+        <div className="flex gap-2 items-center text-[#050A1F]/60 "> <Check/> Ubrzajte rad osoblja</div>
+        <div className="flex gap-2 items-center text-[#050A1F]/60 "> <Check/> Omogućite sebi uvid u svaki segment poslovanja</div>
+        <div className="flex gap-2 items-center text-[#050A1F]/60 "> <Check/> Podarite svojim gostima kvalitetniju i bržu uslugu</div>
+        <button className="mt-10 group flex items-center gap-4 bg-[#050A1F] text-white px-8 py-4 rounded-full font-bold tracking-widest overflow-hidden relative transition-transform hover:scale-[1.02]" onClick={navigateToMeetingLink}>
+          <span className="relative z-10">Želim LoungeLink</span>
           <ArrowRight className="relative z-10 w-5 h-5 group-hover:translate-x-1 transition-transform" />
           <div className="absolute inset-0 bg-[#c4391d] translate-y-full group-hover:translate-y-0 transition-transform duration-500" />
         </button>
