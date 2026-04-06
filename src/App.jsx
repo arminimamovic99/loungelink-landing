@@ -118,10 +118,10 @@ const Hero = () => {
         <span className='font-bold text-black'>Lounge<span className="text-[#c4391d]">Link</span></span> je pametni sistem za upravljanje modernim nargila barovima. <br />
         </p>
         <hr className='my-3 opacity-30' />
-        <div className="flex gap-2 items-center text-[#050A1F]/60 "> <Check/> Eliminišite greške u komunikaciji osoblja</div>
-        <div className="flex gap-2 items-center text-[#050A1F]/60 "> <Check/> Ubrzajte rad osoblja</div>
-        <div className="flex gap-2 items-center text-[#050A1F]/60 "> <Check/> Omogućite sebi uvid u svaki segment poslovanja</div>
-        <div className="flex gap-2 items-center text-[#050A1F]/60 "> <Check/> Podarite svojim gostima kvalitetniju i bržu uslugu</div>
+        <div className="flex gap-2 w-100 justify-start items-center text-[#050A1F]/60 "> <Check/> Eliminišite greške u komunikaciji osoblja</div>
+        <div className="flex gap-2 w-100 justify-start items-center text-[#050A1F]/60 "> <Check/> Ubrzajte rad osoblja</div>
+        <div className="flex gap-2 w-100 justify-start items-center text-[#050A1F]/60 "> <Check/> Omogućite sebi uvid u svaki segment poslovanja</div>
+        <div className="flex gap-2 w-100 justify-start items-center text-[#050A1F]/60 "> <Check/> Podarite svojim gostima kvalitetniju i bržu uslugu</div>
         <button className="mt-10 group flex items-center gap-4 bg-[#050A1F] text-white px-8 py-4 rounded-full font-bold tracking-widest overflow-hidden relative transition-transform hover:scale-[1.02]" onClick={navigateToMeetingLink}>
           <span className="relative z-10">Želim LoungeLink</span>
           <ArrowRight className="relative z-10 w-5 h-5 group-hover:translate-x-1 transition-transform" />
