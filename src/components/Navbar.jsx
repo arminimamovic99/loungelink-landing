@@ -12,6 +12,7 @@ const Navbar = () => {
   }, []);
 
   const links = [
+    { href: '#analytics', label: t.nav.analytics },
     { href: '#features', label: t.nav.features },
     { href: '#how', label: t.nav.how },
     { href: '#pricing', label: t.nav.pricing },
@@ -30,7 +31,7 @@ const Navbar = () => {
         Lounge<span className="text-signal">Link</span>
       </a>
 
-      <div className="hidden md:flex gap-8 text-[11px] font-bold uppercase tracking-widest text-ink">
+      <div className="hidden md:flex gap-4 lg:gap-8 text-[11px] font-bold uppercase tracking-widest text-ink whitespace-nowrap">
         {links.map((link) => (
           <a key={link.href} href={link.href} className="hover:text-signal transition-colors">
             {link.label}

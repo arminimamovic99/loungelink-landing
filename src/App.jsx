@@ -2,6 +2,7 @@ import React, { useEffect, useMemo, useState } from 'react';
 import { LangContext, translations } from './i18n';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
+import Analytics from './components/Analytics';
 import TrustStrip from './components/TrustStrip';
 import Features from './components/Features';
 import HowItWorks from './components/HowItWorks';
@@ -38,6 +39,7 @@ const App = () => {
 
         <Navbar />
         <Hero />
+        <Analytics />
         <TrustStrip />
         <Features />
         <HowItWorks />

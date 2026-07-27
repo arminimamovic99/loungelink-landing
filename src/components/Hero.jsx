@@ -58,7 +58,7 @@ const Hero = () => {
             </span>
           </h1>
 
-          <p className="mt-8 max-w-xl text-lg text-ink/60 font-medium">{t.hero.subtitle}</p>
+          <p className="mt-8 max-w-xl text-lg text-black font-bold">{t.hero.subtitle}</p>
 
           <ul className="mt-6 space-y-2.5">
             {t.hero.bullets.map((bullet) => (

@@ -13,6 +13,7 @@ export const translations = {
   bs: {
     whatsappDefault: 'Zanima me LoungeLink!',
     nav: {
+      analytics: 'Analitika',
       features: 'Rješenje',
       how: 'Kako radi',
       pricing: 'Cijena',
@@ -20,14 +21,14 @@ export const translations = {
       cta: 'Želim LoungeLink',
     },
     hero: {
-      titleStart: 'Savršen softver za vaš',
-      titleAccent: 'nargila bar.',
-      subtitle:
-        'LoungeLink je pametni sistem za upravljanje modernim nargila barovima — narudžbe, stolovi i računi na jednom mjestu.',
+      titleStart: 'Prestanite nagađati koliko je novca večeras',
+      titleAccent: 'ušlo u vaš lokal.',
+      subtitle: 'Zadržite više novca. Spavajte mirno, znajući da LoungeLink čuva vaše poslovanje.',
       bullets: [
-        'Bez grešaka u komunikaciji osoblja',
-        'Brža usluga za svaki sto',
-        'Uvid u svaki segment poslovanja',
+        'Znajte tačno gdje ide svaka marka.',
+        'Uđite u trag svakoj nargili.',
+        'Osigurajte brzu uslugu za svaki stol.',
+        'Nula skrivenih narudžbi. Nula ukradenog novca.'
       ],
       cta: 'Želim LoungeLink',
       ctaSecondary: 'Pogledaj cijene',
@@ -39,6 +40,31 @@ export const translations = {
       'Podrška putem WhatsApp-a',
       'Narudžbe, stolovi i računi — sve na jednom mjestu',
     ],
+    analytics: {
+      eyebrow: 'Za vlasnike',
+      title: 'Dokazi, ne',
+      titleAccent: 'nagađanje.',
+      subtitle:
+        'Svaka narudžba, svaka marka, svaki konobar — zabilježeni i vidljivi. Vaš novac, pod vašom kontrolom, u svakom trenutku.',
+      bullets: [
+        'Prihod i broj narudžbi ažurno, u realnom vremenu.',
+        'Prihod po konobaru — znate ko donosi, a ko ne.',
+        'Najprometniji sati — planirajte osoblje unaprijed.',
+      ],
+      mainImgAlt: 'Pregled poslovanja u LoungeLink admin panelu',
+      panels: [
+        {
+          title: 'Svaka narudžba, zabilježena.',
+          desc: 'Filtrirajte narudžbe po datumu ili proizvodu. Nijedna stavka ne prođe nezabilježeno.',
+          imgAlt: 'Pregled narudžbi u LoungeLink admin panelu',
+        },
+        {
+          title: 'Prihod po konobaru.',
+          desc: 'Vidite tačno koliko je ko naplatio i koliko je narudžbi opslužio — bez pogađanja, bez izgovora.',
+          imgAlt: 'Pregled učinka osoblja u LoungeLink admin panelu',
+        },
+      ],
+    },
     features: {
       eyebrow: 'Rješenje',
       title: 'Zašto',
@@ -156,6 +182,7 @@ export const translations = {
   en: {
     whatsappDefault: "I'm interested in LoungeLink!",
     nav: {
+      analytics: 'Analytics',
       features: 'Solution',
       how: 'How it works',
       pricing: 'Pricing',
@@ -182,6 +209,31 @@ export const translations = {
       'Support via WhatsApp',
       'Orders, tables and bills — all in one place',
     ],
+    analytics: {
+      eyebrow: 'For owners',
+      title: 'Full visibility,',
+      titleAccent: 'zero guesswork.',
+      subtitle:
+        'Revenue, orders and staff performance in real time — everything you need to run your venue with confidence.',
+      bullets: [
+        'Revenue and order count, updated in real time.',
+        "Revenue per waiter — know who's pulling their weight.",
+        'Peak hours — plan your staffing ahead of time.',
+      ],
+      mainImgAlt: 'Business overview in the LoungeLink admin panel',
+      panels: [
+        {
+          title: 'Every order, on record.',
+          desc: 'Filter orders by date or product. Nothing slips through unnoticed.',
+          imgAlt: 'Orders overview in the LoungeLink admin panel',
+        },
+        {
+          title: 'Revenue per waiter.',
+          desc: 'See exactly how much each waiter brought in and how many orders they handled — no guessing, no excuses.',
+          imgAlt: 'Staff performance overview in the LoungeLink admin panel',
+        },
+      ],
+    },
     features: {
       eyebrow: 'Solution',
       title: 'Why',

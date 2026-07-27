@@ -5,6 +5,7 @@ const Footer = () => {
   const { t } = useLang();
 
   const links = [
+    { href: '#analytics', label: t.nav.analytics },
     { href: '#features', label: t.nav.features },
     { href: '#how', label: t.nav.how },
     { href: '#pricing', label: t.nav.pricing },
