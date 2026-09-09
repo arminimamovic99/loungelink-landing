@@ -190,14 +190,15 @@ export const translations = {
       cta: 'Get LoungeLink',
     },
     hero: {
-      titleStart: 'The perfect software for your',
-      titleAccent: 'hookah lounge.',
+      titleStart: 'Stop guessing how much money',
+      titleAccent: 'left your bar tonight.',
       subtitle:
-        'LoungeLink is a smart management system for modern hookah lounges — orders, tables and bills in one place.',
+        'Keep more of what you earn. Sleep easy knowing LoungeLink is guarding your business.',
       bullets: [
-        'No more staff communication errors',
-        'Faster service for every table',
-        'Insight into every part of your business',
+        'Know exactly where your money goes.',
+        'Track every hookah, from order to bar.',
+        'Guarantee fast service at every table.',
+        'Zero hidden orders. Zero stolen money.',
       ],
       cta: 'Get LoungeLink',
       ctaSecondary: 'See pricing',
@@ -214,7 +215,7 @@ export const translations = {
       title: 'Full visibility,',
       titleAccent: 'zero guesswork.',
       subtitle:
-        'Revenue, orders and staff performance in real time — everything you need to run your venue with confidence.',
+        'Every order, every BAM, every waiter, tracked and visible. Your money, under your control, all the time.',
       bullets: [
         'Revenue and order count, updated in real time.',
         "Revenue per waiter — know who's pulling their weight.",
